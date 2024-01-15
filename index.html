@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding-top: 10px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(47, 88%, 63%);
+}
+.text-section {
+  width: 300px;
+  height: 200px;
+ 
+}
+.image {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.image > img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.container {
+  background-color: white;
+  width: 300px;
+  padding: 10px 19px 40px 19px;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+  border: solid 2px;
+}
+
+.box {
+  background-color: hsl(47, 88%, 63%);
+  width: 85px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  height: 30px;
+}
+
+.name {
+  padding-left: 10px;
+  margin-bottom: 50px;
+
+}
+.p1 , .p2 {
+  font-weight: 800;
+} 
+.p1 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+  font-family: 'Outfit', sans-serif;
+}
+.p0 {
+  font-weight: 400;
+}
+
+.text-section > p:last-child {
+  vertical-align: middle; /* Align last paragraph with image center */
+  margin-bottom: 300px;
+      
+}
+    
+
+.container:hover {
+   box-shadow: 10px 10px;
+}
+
+.container:hover .p1 {
+  color: hsl(47, 88%, 63%) ;
+}
+
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image">
+    <img class="image" src="./assets/images/illustration-article.svg" alt="illustration-article">
+  </div>
+
+  <div class="text-section">
+    <div class="box">Learning</div>
+
+   <p class="p0">Published 21 Dec 2023</p>
+
+   <p class="p1">HTML & CSS foundations</p>
+
+   <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+   <div class="profile">
+    <div><img src="./assets/images/image-avatar.webp" height="30px"></div>
+    <div class="name"><p class="p2">Greg Hooper</p></div>
+   </div>
+      
+  </div>
+  
+  
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Olivia Nguni</a>.
+  </div>
+</body>
+</html>
